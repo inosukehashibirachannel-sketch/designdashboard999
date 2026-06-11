@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.track {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: var(--color-track);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  height: 100%;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(
+    90deg,
+    var(--color-primary),
+    var(--color-greenStrong)
+  );
+  min-width: 2px;
+  transition: width 0.4s ease;
+}
+
+.caption {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-md);
+  font-size: var(--font-size-xs);
+  color: var(--color-textSecondary);
+}
+
+.target {
+  color: var(--color-textMuted);
+}

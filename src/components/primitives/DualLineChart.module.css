@@ -1,0 +1,33 @@
+.chart {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.gridline {
+  stroke: var(--color-border);
+  stroke-width: 1;
+}
+
+.axisLabel {
+  fill: var(--color-textMuted);
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+}
+
+.xLabelDay {
+  fill: var(--color-textSecondary);
+  font-size: 11px;
+  font-weight: var(--font-weight-medium);
+}
+
+.xLabelDate {
+  fill: var(--color-textMuted);
+  font-size: 10px;
+}
+
+.legendLabel {
+  fill: var(--color-textSecondary);
+  font-size: 11px;
+  font-weight: var(--font-weight-medium);
+}

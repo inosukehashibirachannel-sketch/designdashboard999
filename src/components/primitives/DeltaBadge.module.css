@@ -1,0 +1,36 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 2px var(--space-sm);
+  border-radius: var(--radius-pill);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.improvement {
+  color: var(--color-greenStrong);
+  background-color: rgba(34, 197, 94, 0.12);
+}
+
+.worsening {
+  color: var(--color-red);
+  background-color: rgba(239, 68, 68, 0.12);
+}
+
+/* Mild worsening uses amber rather than red (per the spec's amber/red scale). */
+.caution {
+  color: var(--color-amber);
+  background-color: rgba(245, 158, 11, 0.12);
+}
+
+.flat {
+  color: var(--color-textMuted);
+  background-color: var(--color-surfaceAlt);
+}
+
+.arrow {
+  font-size: 0.85em;
+}

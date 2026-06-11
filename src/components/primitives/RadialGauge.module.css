@@ -1,0 +1,21 @@
+.gauge {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.track {
+  fill: none;
+  stroke: var(--color-track);
+}
+
+.value {
+  fill: var(--color-text);
+  font-weight: var(--font-weight-bold);
+  font-variant-numeric: tabular-nums;
+}
+
+.caption {
+  fill: var(--color-textSecondary);
+  font-weight: var(--font-weight-medium);
+}
