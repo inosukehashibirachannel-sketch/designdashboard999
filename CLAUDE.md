@@ -38,6 +38,12 @@ Before committing, ensure all pass: typecheck, lint, test, `format:check`, build
 - `src/theme/` — `tokens.ts` (the single source of truth for all design tokens)
   and `cssVariables.ts` (flattens tokens into `:root` CSS custom properties,
   injected by the layout so CSS and TS/SVG code never drift).
+- `src/data/` — the single source of truth for all widget data. `rng.ts`
+  (seeded PRNG + helpers), `generateDashboardData.ts` (pure
+  `(seed, referenceMs) → DashboardData`), `format.ts` (pure display/`computeDelta`
+  helpers), `types.ts`, and `DashboardDataContext.tsx`
+  (`DashboardDataProvider` + `useDashboardData()`). Generated once per load and
+  shared via context; never call the generator directly inside a widget.
 
 ## Conventions & constraints (must follow)
 
