@@ -44,6 +44,12 @@ Before committing, ensure all pass: typecheck, lint, test, `format:check`, build
   helpers), `types.ts`, and `DashboardDataContext.tsx`
   (`DashboardDataProvider` + `useDashboardData()`). Generated once per load and
   shared via context; never call the generator directly inside a widget.
+- `src/components/primitives/` — reusable, token-aligned primitives every widget
+  must use (barrel `index.ts`): `Card`, `SectionHeader`, `StatRow`, `DeltaBadge`
+  (colors by `Delta.isImprovement`, ▲/▼), `ProportionalBar`, `ProgressBar`, and
+  custom-SVG `RadialGauge` (radial + semicircle) and `DualLineChart`. Pure SVG
+  math lives in `svg/geometry.ts`. Primitives are presentational (props in);
+  widgets map dataset → props.
 
 ## Conventions & constraints (must follow)
 
